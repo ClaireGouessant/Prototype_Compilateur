@@ -1,0 +1,7 @@
+6
+A E
+E TG
+G +TG|#
+T FU
+U *FU|#
+F (E)|n

@@ -1,0 +1,201 @@
+# depslib dependency file v1.0
+1492765602 source:e:\bureau\langagecomp\clairesrecursivite.cpp
+	"Language.h"
+
+1492765602 e:\bureau\langagecomp\language.h
+	<iostream>
+	<vector>
+	<time.h>
+	<fstream>
+	<stdlib.h>
+	<stdio.h>
+	<stack>
+	<string>
+
+1492765602 source:e:\bureau\langagecomp\language.cpp
+	<iostream>
+	"Language.h"
+	<fstream>
+
+1492800399 source:e:\bureau\langagecomp\main.cpp
+	<iostream>
+	"Language.h"
+
+1492765602 source:e:\bureau\langagecomp\premiersuivant.cpp
+	"Language.h"
+
+1492398264 source:f:\l3_s6\langcomp\langagecomp-master\clairesrecursivite.cpp
+	"Language.h"
+
+1492437766 f:\l3_s6\langcomp\langagecomp-master\language.h
+	<iostream>
+	<vector>
+	<time.h>
+	<fstream>
+	<stdlib.h>
+	<stdio.h>
+
+1492398264 source:f:\l3_s6\langcomp\langagecomp-master\language.cpp
+	<iostream>
+	"Language.h"
+
+1492398264 source:f:\l3_s6\langcomp\langagecomp-master\main.cpp
+	<iostream>
+	"Language.h"
+
+1492398264 source:f:\l3_s6\langcomp\langagecomp-master\premiersuivant.cpp
+	"Language.h"
+
+1492555114 source:c:\users\vincent\desktop\langagecomp\langagecomp\clairesrecursivite.cpp
+	"Language.h"
+
+1492792850 c:\users\vincent\desktop\langagecomp\langagecomp\language.h
+	<iostream>
+	<vector>
+	<time.h>
+	<fstream>
+	<stdlib.h>
+	<stdio.h>
+	<stack>
+
+1492790360 source:c:\users\vincent\desktop\langagecomp\langagecomp\language.cpp
+	<iostream>
+	"Language.h"
+	<fstream>
+
+1492673836 source:c:\users\vincent\desktop\langagecomp\langagecomp\main.cpp
+	<iostream>
+	"Language.h"
+
+1492797159 source:c:\users\vincent\desktop\langagecomp\langagecomp\premiersuivant.cpp
+	"Language.h"
+
+1492797170 source:c:\users\vincent\desktop\langagecomp\langagecomp\analyse.cpp
+	"Language.h"
+
+1492647734 source:d:\_claire2_\l3\ad\detection\langagecomp-master\clairesrecursivite.cpp
+	"Language.h"
+
+1492706256 d:\_claire2_\l3\ad\detection\langagecomp-master\language.h
+	<iostream>
+	<vector>
+	<time.h>
+	<fstream>
+	<stdlib.h>
+	<stdio.h>
+	<stack>
+
+1492647734 source:d:\_claire2_\l3\ad\detection\langagecomp-master\language.cpp
+	<iostream>
+	"Language.h"
+	<fstream>
+
+1492647734 source:d:\_claire2_\l3\ad\detection\langagecomp-master\main.cpp
+	<iostream>
+	"Language.h"
+
+1492686602 source:d:\_claire2_\l3\ad\detection\langagecomp-master\premiersuivant.cpp
+	"Language.h"
+
+1492647734 source:d:\_claire2_\l3\ad\detection\langagecomp-master\analyse.cpp
+	"Language.h"
+
+1492706139 source:d:\_claire2_\l3\ad\detection\langagecomp-master\clairereconnaissance.cpp
+	"Language.h"
+
+1492647734 source:d:\_claire2_\l3\ad\detection\langagecomp-master\trash.cpp
+	<iostream>
+	<vector>
+	"Language.h"
+
+1492725227 source:c:\users\vincent\desktop\langagecomp\langagecomp\clairereconnaissance.cpp
+	"Language.h"
+
+1492555114 source:c:\users\vincent\desktop\langagecomp\langagecomp\trash.cpp
+	<iostream>
+	<vector>
+	"Language.h"
+
+1492765602 source:e:\bureau\langagecomp\analyse.cpp
+	"Language.h"
+
+1492765602 source:e:\bureau\langagecomp\clairereconnaissance.cpp
+	"Language.h"
+
+1492765602 source:e:\bureau\langagecomp\trash.cpp
+	<iostream>
+	<vector>
+	"Language.h"
+
+1492949438 source:d:\_claire2_\l3\ad\debug\langagecomp-master\analyse.cpp
+	"Language.h"
+
+1492951345 d:\_claire2_\l3\ad\debug\langagecomp-master\language.h
+	<iostream>
+	<vector>
+	<time.h>
+	<fstream>
+	<stdlib.h>
+	<stdio.h>
+	<stack>
+	<string>
+
+1492952261 source:d:\_claire2_\l3\ad\debug\langagecomp-master\clairereconnaissance.cpp
+	"Language.h"
+
+1492769864 source:d:\_claire2_\l3\ad\debug\langagecomp-master\clairesrecursivite.cpp
+	"Language.h"
+
+1492769864 source:d:\_claire2_\l3\ad\debug\langagecomp-master\language.cpp
+	<iostream>
+	"Language.h"
+	<fstream>
+
+1492966825 source:d:\_claire2_\l3\ad\debug\langagecomp-master\main.cpp
+	<iostream>
+	"Language.h"
+
+1492953464 source:d:\_claire2_\l3\ad\debug\langagecomp-master\premiersuivant.cpp
+	"Language.h"
+
+1492769864 source:d:\_claire2_\l3\ad\debug\langagecomp-master\trash.cpp
+	<iostream>
+	<vector>
+	"Language.h"
+
+1492945838 source:d:\_claire2_\l3\langcompil\langagecomp-master\analyse.cpp
+	"Language.h"
+
+1492947745 d:\_claire2_\l3\langcompil\langagecomp-master\language.h
+	<iostream>
+	<vector>
+	<time.h>
+	<fstream>
+	<stdlib.h>
+	<stdio.h>
+	<stack>
+	<string>
+
+1492948661 source:d:\_claire2_\l3\langcompil\langagecomp-master\clairereconnaissance.cpp
+	"Language.h"
+
+1492766264 source:d:\_claire2_\l3\langcompil\langagecomp-master\clairesrecursivite.cpp
+	"Language.h"
+
+1492766264 source:d:\_claire2_\l3\langcompil\langagecomp-master\language.cpp
+	<iostream>
+	"Language.h"
+	<fstream>
+
+1492963225 source:d:\_claire2_\l3\langcompil\langagecomp-master\main.cpp
+	<iostream>
+	"Language.h"
+
+1492949864 source:d:\_claire2_\l3\langcompil\langagecomp-master\premiersuivant.cpp
+	"Language.h"
+
+1492766264 source:d:\_claire2_\l3\langcompil\langagecomp-master\trash.cpp
+	<iostream>
+	<vector>
+	"Language.h"
+
