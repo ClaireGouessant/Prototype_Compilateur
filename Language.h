@@ -40,8 +40,6 @@ public:
     void empiler(std::string saisie);
     void reconnaissance();
     bool compiler();
-    void Creation();
-    void DeterminerNbRegles();
     std::string saisir();
     bool ctrHorsLangage(std::string phrase);
 

@@ -2,75 +2,6 @@
 
 using namespace std;
 
-/*void Langage::recupSRecursivite()
-{
-    // Tableau "sRecursivite" codé directement pour les tests.
-    sRecursivite.push_back(vector<char>(4));
-    sRecursivite.push_back(vector<char>(2));
-    sRecursivite.push_back(vector<char>(3));
-    sRecursivite.push_back(vector<char>(4));
-    sRecursivite.push_back(vector<char>(2));
-    sRecursivite[0][0]='S';
-    sRecursivite[0][1]='(';
-    sRecursivite[0][2]='L';
-    sRecursivite[0][3]=')';
-    sRecursivite[1][0]='S';
-    sRecursivite[1][1]='a';
-    sRecursivite[2][0]='L';
-    sRecursivite[2][1]='S';
-    sRecursivite[2][2]='l';
-    sRecursivite[3][0]='l';
-    sRecursivite[3][1]=',';
-    sRecursivite[3][2]='S';
-    sRecursivite[3][3]='l';
-    sRecursivite[4][0]='l';
-    sRecursivite[4][1]='#';
-
-    etats.push_back('l');
-    etats.push_back('#');
-    terminaux.push_back(false);
-    terminaux.push_back(true);
-}*/
-
-
-/*void Langage::recupSRecursivite()///ne fonctionne que pour la récursivité directe
-{
-    //Parcourir tout le vecteur imports
-    for(unsigned i=0; i<imports.size(); i++)
-    {
-        //Ajouter une ligne et copier la ligne dans le vecteur sRecursitite
-        sRecursivite.push_back(vector<char>(1));//sRecursivite.push_back(vector<char>imports[i])
-        sRecursivite[sRecursivite.size()-1] = imports[i];
-        //S'il y a une récursivité à gauche
-        if(sRecursivite[sRecursivite.size()-1][0] == sRecursivite[sRecursivite.size()-1][1])
-        {
-            //Chercher une ligne commençant par le même état mais pas récursive
-            for(unsigned j=0; j<imports.size(); j++)
-            {
-                if((imports[j][0] == sRecursivite[sRecursivite.size()-1][0]) && (imports[j][0] == imports[j][1]))
-                {
-                    //vérifier si la règle est déjà dans le vecteur sRecursivite (< ou >)
-                    if(j < i)//Si oui
-                    {
-                        //Modifier la ligne en ajoutant un nouvel état
-                        //Si ça a déjà été changé ça marche pas
-                    }
-                    else//Si non
-                    {
-
-                        //Ajouter une ligne et inscrire la règle
-
-                    }
-                    //Ajouter deux lignes et écrire les règles du nouvel état
-                    //Mettre à jour les vecteurs etat et terminaux
-                    //sortir du si et du pour
-                }//fin si
-            }//fin pour
-            //add etat terminal
-        }//fin si
-    }//fin pour
-}*/
-
 void Langage::recupSRecursivite()//ne fonctionne que pour la récursivité directe
 {
     //Parcourir les etats
@@ -95,9 +26,6 @@ void Langage::recupSRecursivite()//ne fonctionne que pour la récursivité directe
                     sRecursivite.push_back(vector<char>(2));
                     sRecursivite[sRecursivite.size()-1][0] = nouvEtat;
                     sRecursivite[sRecursivite.size()-1][1] = '#';
-
-
-                    //sRecursivité[sRecursivite.size()].push_back('#');
 
                     //ajouter # dans les etats
                     bool diese = false;
@@ -220,7 +148,7 @@ char Langage::trouverEtatLibre(char ancLettre)
 
 void Langage::afficherGrammaireSRecursivite()
 {
-    cout << "\n\n==== Grammaire sans recursivite ====\n" << endl;
+    cout << endl << "==== Grammaire sans recursivite ====" << endl << endl;
     for (unsigned int x=0; x<sRecursivite.size(); x++)
     {
         cout << " " << sRecursivite[x][0] << " ->";;

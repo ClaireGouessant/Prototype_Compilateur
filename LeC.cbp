@@ -39,7 +39,6 @@
 		<Unit filename="Language.h" />
 		<Unit filename="PremierSuivant.cpp" />
 		<Unit filename="main.cpp" />
-		<Unit filename="trash.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

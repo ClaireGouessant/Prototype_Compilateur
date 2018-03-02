@@ -40,19 +40,13 @@ bool Langage::ctrHorsLangage(string phrase)
 // empiler la chaine
 void Langage::empiler(string saisie)
 {
-    // ajouter le symbole terminal
-    saisie += '$';
+    saisie += '$';// ajouter le symbole terminal
 
     // recopier chacun des caractères de la saisie dans la phrase en commençant par la fin
     for(int i=saisie.size()-1; i>=0; i--)
     {
         phrase.push(saisie[i]);
     }
-
-    /*cout << endl << "La phrase push dans la pile est la suivante :" << endl;
-    afficher(phrase);
-    cout << endl;*/ // à supprimer
-
     return;
 }
 
@@ -64,7 +58,7 @@ void afficher(const stack<char>& p)
                 cout << t.top();
                 t.pop();
                 if(!t.empty())
-                        cout << " , ";
+                    cout << " , ";
         }
 }
 
@@ -102,7 +96,6 @@ bool Langage::compiler()
         }
         else if(ctr_phrase == '#') phrase.pop();
         else if(ctr_sortie == '$' && EstTerminal(ctr_phrase)) return false;
-        //Sinon
         else
         {
             // Parcourir les lignes de la table

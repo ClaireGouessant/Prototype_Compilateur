@@ -77,33 +77,14 @@ string saisieFichier()
         }
         else if (menu == "10")
         {
-            menu = "fichierTest10proto.txt";
+            menu = "fichierTest10.txt";
             verif = true;
         }
         else if (menu == "11")
         {
             menu = "fichierTest11.txt";
             verif = true;
-            /*cout << " Veuillez entrer le nom du fichier (ne pas oublier l'extension .txt)" << endl;
-            cin  >> menu;
-            ifstream fichier (menu.c_str(), ios::in);
-            if (fichier)
-            {
-                verif = true;
-                fichier.close();
-            }
-
-            else
-            {
-                cout << " Erreur de saisie, le fichier specifie n'existe pas" << endl;
-            }*/
         }
-         else if (menu == "12")
-        {
-            menu = "fichierTestFollows.txt";
-            verif = true;
-        }
-
         else if (menu == "0")
         {
             cout<<"\n\n\n\nDeveloppe par Duhamel Bertrand, Gouessant Claire," << endl << "              Laversanne Vincent, Zuber Thibault."<<endl;

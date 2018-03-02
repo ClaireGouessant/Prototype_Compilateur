@@ -1,4 +1,4 @@
 3
-S AaAb|BbBa
-A #
-B #
+S AaBb|BbAa
+A aA#
+B bB#

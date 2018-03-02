@@ -5,8 +5,8 @@ using namespace std;
 void Langage::AnalyseInit()
 {
     int a=1;
-     analyse.push_back(vector<char>());
-     analyse[0].push_back(' ');
+    analyse.push_back(vector<char>());
+    analyse[0].push_back(' ');
 
     for(unsigned int i=0; i<terminaux.size();i++)
     {
@@ -31,7 +31,7 @@ void Langage::AnalyseInit()
 void Langage::affichageTableA()
 {
     int affichage;
-    cout<<"\n\n===== Table d'Analyse ====\n\n"<<endl;
+    cout<<endl<<"===== Table d'Analyse ===="<<endl<<endl;
     for(unsigned int i=0;i<analyse.size();i++)
     {
         cout<<analyse[i][0]<<" | ";
@@ -54,45 +54,30 @@ void Langage::affichageTableA()
 }
 void Langage::testPremiers(int i, int j, int k)
 {
-  bool monEtat=false;
-  monEtat= EstTerminal(sRecursivite[k][1]);
-  if(monEtat==true&&sRecursivite[k][1]==analyse[0][j])//Si le premier caractere de la regle est celui recherche
-  {
-    analyse[i][j]=k+1;//Attention la valeur devait etre k, mais conflit avec la fonction d'affichage pour recurperer la regle merci de mettre analyse[i][j]-1
-  }
+    bool monEtat=false;
+    monEtat= EstTerminal(sRecursivite[k][1]);
+    if(monEtat==true&&sRecursivite[k][1]==analyse[0][j])//Si le premier caractere de la regle est celui recherche
+    {
+        analyse[i][j]=k+1;
+    }
 
-  else
-  {
-      for(unsigned int p=0;p<premiers.size();p++)
-      {
-          for(unsigned int e=1;e<premiers[p].size();e++)
-          {
-              if(premiers[p][0]== sRecursivite[k][1] &&analyse[0][j]==premiers[p][e])
-              {
-                  analyse[i][j]=k+1;//Attention la valeur devait etre k, mais conflit avec la fonction d'affichage pour recurperer la regle merci de mettre analyse[i][j]-1
-              }
-          }
-      }
-  }
-
+    else
+    {
+        for(unsigned int p=0;p<premiers.size();p++)
+        {
+            for(unsigned int e=1;e<premiers[p].size();e++)
+            {
+                if(premiers[p][0]== sRecursivite[k][1] &&analyse[0][j]==premiers[p][e])
+                {
+                    analyse[i][j]=k+1;
+                }
+            }
+        }
+    }
 }
 
 void Langage::testSuivants(int i, int j, int k)
 {
-   // bool presenceMotVide=false;
-    //Test du mot vide dans les differentes regles d un meme etat
-   /* for(unsigned int f=0;f<premiers.size();f++)
-    {
-        for(unsigned int g=1; g<premiers[f].size();g++)
-        {
-            if(analyse[i][0]==premiers[f][0]&&premiers[f][g]=='#')
-            {
-                presenceMotVide=true;
-            }
-        }
-    }*/
-
-    //if(presenceMotVide==true)
     if(sRecursivite[k][1]=='#')
     {
         for (unsigned int h=0; h<suivants.size();h++)
@@ -101,7 +86,7 @@ void Langage::testSuivants(int i, int j, int k)
             {
                 if(analyse[i][0]==suivants[h][0]&& analyse[0][j]==suivants[h][t] && analyse[i][j]==0)//Recherche du symbole dans les follows de l'etat
                 {
-                    analyse[i][j]=k+1;//Attention la valeur devait etre k, mais conflit avec la fonction d'affichage pour recurperer la regle merci de mettre analyse[i][j]-1
+                    analyse[i][j]=k+1;
                 }
             }
         }
@@ -119,11 +104,11 @@ void Langage::Analyse()
             //Parcours de sRecursivite[][]
             for(unsigned int k = 0;k<sRecursivite.size();k++)
             {
-                  if(analyse[i][0]==sRecursivite[k][0])
-                  {
-                      testPremiers(i,j,k);
-                      testSuivants(i,j,k);
-                  }
+                if(analyse[i][0]==sRecursivite[k][0])
+                {
+                    testPremiers(i,j,k);
+                    testSuivants(i,j,k);
+                }
             }
         }
     }

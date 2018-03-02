@@ -70,7 +70,7 @@ void Langage::recupTerminal()
     }
 }
 
-void Langage::recupEtats() // ...
+void Langage::recupEtats()
 {
     for (unsigned int x=0; x<imports.size(); x++)
     {
@@ -114,8 +114,9 @@ void Langage::afficherGrammaire()
 
 void Langage::afficherEtatsEtTerminaux()
 {
-    cout<<"\n\n==== Caracteristiques des etats ===\n"<<endl;
-    cout << "\nLes etats  terminaux sont: ";
+    cout<<endl<<endl<<"==== Caracteristiques des etats ==="<<endl<<endl;
+
+    cout << "Les etats  terminaux sont: ";
     for (unsigned int i=0; i<etats.size(); i++)
     {
         if( terminaux[i]== 1)
@@ -123,9 +124,8 @@ void Langage::afficherEtatsEtTerminaux()
             cout <<"  "<<etats[i] <<" ";
         }
     }
-    cout <<endl;
 
-    cout << "\nLes etats  non terminaux sont: ";
+    cout << endl << endl << "Les etats  non terminaux sont: ";
     for (unsigned int i=0; i<etats.size(); i++)
     {
         if( terminaux[i]!= 1)
@@ -135,6 +135,6 @@ void Langage::afficherEtatsEtTerminaux()
 
         }
     }
-    cout <<endl;
+    cout << endl;
 }
 
